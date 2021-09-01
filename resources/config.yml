@@ -1,0 +1,6 @@
+#Infinity True / False
+
+infinity-slots: true
+
+#If True: when player join, slots player +1
+#If False: Slots player default (server.properties)
