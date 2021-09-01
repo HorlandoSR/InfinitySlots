@@ -17,7 +17,7 @@ class Utils { //Register class.
         $this->plugin = $plugin; //Register variable
     }
      /** @var int */
-     private const CONFIG_VERSION = 0.2; //Register config version file - Will get updated everytime a new config version is available.
+     private const CONFIG_VERSION = 1; //Register config version file - Will get updated everytime a new config version is available.
 	/**
 	 * Checks if a new version of this plugin is released.
 	 */
