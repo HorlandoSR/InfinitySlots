@@ -1,0 +1,10 @@
+name: InfinitySlots
+version: 1.0.0
+api: 3.0.0
+author: HaykalPRO
+main: InfinitySlots\HaykalPRO\Main
+description: "InfinitySlots Query +1 Player"
+
+virions:
+- UpdateNotifier
+- ConfigUpdater
