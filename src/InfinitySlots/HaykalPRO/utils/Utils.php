@@ -7,7 +7,7 @@ use JackMD\UpdateNotifier\UpdateNotifier;
 
 use pocketmine\utils\Config;
 
-use CustomQuery\iZeaoGamer\Main;
+use InfinitySlots\HaykalPRO\Main;
 
 use RuntimeException;
 
