@@ -22,7 +22,14 @@ class Main extends PluginBase implements Listener{
 
 	public function onQuery(QueryRegenerateEvent $event){
 		$config = new Config($this->getDataFolder() . "config.yml", Config::YAML, array());
-	if($config->get("infinity-slots") === true){
+    if($config->get("infinity-slots") === true){
         $event->setMaxPlayerCount($event->getPlayerCount() + 1);
-	}
 }
+		$config = new Config($this->getDataFolder() . "config.yml", Config::YAML, array());
+        if($config->get("fake-slots") === true){
+        $minPlayerCount = $config->get("min-slots");
+$maxPlayerCount = $config->get("max-slots");
+$event->setPlayerCount(mt_rand($minPlayerCount, $maxPlayerCount));
+        }
+     }
+   }
