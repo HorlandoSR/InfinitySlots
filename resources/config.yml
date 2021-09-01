@@ -1,6 +1,15 @@
+config-version: 0.2
 #Infinity True / False
 
 infinity-slots: true
 
 #If True: when player join, slots player +1
 #If False: Slots player default (server.properties)
+
+fake-slots: true
+## Allows you to fake your player slots.
+
+min-slots: 10
+## From first player slot (which is minimum) and then the maximum of slots it can go up to via fake querying it.
+
+max-slots: 1000
