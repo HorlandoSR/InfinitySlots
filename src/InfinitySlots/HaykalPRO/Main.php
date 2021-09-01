@@ -21,8 +21,8 @@ class Main extends PluginBase implements Listener{
 	}
 
 	public function onQuery(QueryRegenerateEvent $event){
-	    $config = new Config($this->getDataFolder() . "config.yml", Config::YAML, array());
+		$config = new Config($this->getDataFolder() . "config.yml", Config::YAML, array());
 	if($config->get("infinity-slots") === true){
         $event->setMaxPlayerCount($event->getPlayerCount() + 1);
-    }
+	}
 }
